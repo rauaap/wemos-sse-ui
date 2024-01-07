@@ -5,6 +5,6 @@
   },
   "scripts": {
       "build": "npx embwebbed-single --js src/js/index.svelte --html src/html/index.html && npx make-html -i src/html/ ../include/html.h",
-      "start": "npx embwebbed --js src/js/ --html src/html/ & livereload src/html/"
+      "start": "npx embwebbed --js src/js/ --html src/html/ & livereload -p $PORT src/html/"
   }
 }
